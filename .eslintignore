@@ -1,0 +1,5 @@
+dist
+lib
+cdn
+front/src/styles
+*.d.ts

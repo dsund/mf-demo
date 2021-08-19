@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2019",
+		"lib": ["es2019", "dom"],
+		"moduleResolution": "node",
+		"rootDir": ".",
+		"baseUrl": "./packages",   
+		
+		"composite": true,
+		"strict": true, 
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		
+		"sourceMap": true,
+		"noEmitOnError": true,
+		"skipLibCheck": true
+	},
+
+	"exclude": ["node_modules", "dist"],
+	"paths": {
+		"@mfdemo/*": ["./packages/*/src"]
+	}
+}

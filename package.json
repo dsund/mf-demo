@@ -1,0 +1,41 @@
+{
+	"name": "mf-demo",
+	"version": "1.0.0",
+	"description": "Typescript monorepo for micro frontend demo",
+	"private": true,
+	"scripts": {
+		"bootstrap": "lerna bootstrap --ignore-scripts",
+		"build": "lerna run --parallel build",
+		"start": "lerna run --parallel start",
+		"clean": "lerna run --parallel clean",
+		"test": "lerna run test",
+		"test:watch": "lerna run --parallel test:watch",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook",
+		"lint": "lerna exec -- eslint . --ext .js,.jsx,.ts,.tsx --fix"
+	},
+	"workspaces": [
+		"packages/**"
+	],
+	"devDependencies": {
+		"@react-theming/storybook-addon": "^1.1.1",
+		"@storybook/addon-actions": "^6.2.9",
+		"@storybook/addon-docs": "^6.2.9",
+		"@storybook/addon-essentials": "^6.2.9",
+		"@storybook/addon-knobs": "^6.2.9",
+		"@storybook/addon-links": "^6.2.9",
+		"@storybook/preset-ant-design": "^0.0.2",
+		"@storybook/react": "^6.2.9",
+		"@typescript-eslint/eslint-plugin": "^4.24.0",
+		"@typescript-eslint/parser": "^4.24.0",
+		"babel-loader": "^8.2.2",
+		"eslint": "^7.26.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-react": "^7.23.2",
+		"lerna": "^4.0.0",
+		"prettier": "^2.3.0",
+		"storybook-react-context": "^0.2.5"
+	},
+	"dependencies": {}
+}
