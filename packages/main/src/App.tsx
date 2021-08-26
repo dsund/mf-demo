@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import Button from 'component-app/Button';
-import { lightTheme } from 'component-app/Themes';
+import { Button } from '@mfdemo/components/components';
+import { lightTheme } from '@mfdemo/components/Themes';
 
 
 const App = () => {

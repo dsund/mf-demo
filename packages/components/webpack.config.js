@@ -46,7 +46,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "components",
       filename: "remoteEntry.js",
-			remotes: {
+      remotes: {
+        "libraries": "libraries@http://localhost:3000/remoteEntry.js",
       },
       exposes: {
         "./Button": "./src/Button/Button",
