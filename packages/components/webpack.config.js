@@ -51,8 +51,7 @@ module.exports = {
       },
       exposes: {
         "./Button": "./src/Button/Button",
-				"./Themes": "./themes"
-      },
+	    },
       shared: {
 				"react": {
           singleton: true, eager: true,
@@ -62,10 +61,11 @@ module.exports = {
           singleton: true, eager: true,
           requiredVersion: deps["react-dom"],
         },
-				"styled-components": {
-          singleton: true, eager: true,
-          requiredVersion: deps["styled-components"],
-        },
+				'styled-components': {
+					singleton: true,
+					eager: true,
+					requiredVersion: deps['styled-components'],
+				}
        },
     }),
 	],

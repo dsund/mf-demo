@@ -44,9 +44,10 @@ module.exports = {
 			template: './public/index.html',
 		}),
 		new ModuleFederationPlugin({
-			name: 'shell',
+			name: 'main',
 			remotes: {
 				components: 'components@http://localhost:3001/remoteEntry.js',
+				userinfo: 'userinfo@http://localhost:3011/remoteEntry.js',
 			},
 			exposes: {},
 			shared: {
@@ -65,6 +66,7 @@ module.exports = {
 					eager: true,
 					requiredVersion: deps['styled-components'],
 				},
+				
 			},
 		}),
 	],

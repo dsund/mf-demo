@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ThemeProvider } from 'styled-components';
 import { Button } from './Button/Button';
-import { lightTheme } from './themes/light';
+import { lightTheme } from '../../shared/src/themes/light';
 
 const App = () => {
 	return (

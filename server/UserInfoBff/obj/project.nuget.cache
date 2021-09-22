@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z9RpCrezhrK7zrXRK81kupA7+uu+uwHjYt8Ou71fuCk1Pl77SvJ/Oo5ii4PhfZdjCOsgdjcDB5gsQsz66PmvGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\daniel.sund\\Repos\\dsund\\mf-demo\\server\\UserInfoBff\\UserInfoBff.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\duende.bff\\1.0.0-rc.3\\duende.bff.1.0.0-rc.3.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\identitymodel\\5.1.0\\identitymodel.5.1.0.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\identitymodel.aspnetcore\\4.0.0-rc.1\\identitymodel.aspnetcore.4.0.0-rc.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.0\\microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\6.0.0-preview.7.21378.6\\microsoft.aspnetcore.spaservices.extensions.6.0.0-preview.7.21378.6.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0-preview.7.21377.19\\microsoft.extensions.fileproviders.abstractions.6.0.0-preview.7.21377.19.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0-preview.7.21377.19\\microsoft.extensions.fileproviders.physical.6.0.0-preview.7.21377.19.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0-preview.7.21377.19\\microsoft.extensions.filesystemglobbing.6.0.0-preview.7.21377.19.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0-preview.7.21377.19\\microsoft.extensions.primitives.6.0.0-preview.7.21377.19.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.7.1\\microsoft.identitymodel.protocols.6.7.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-preview.7.21377.19\\system.runtime.compilerservices.unsafe.6.0.0-preview.7.21377.19.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
+    "C:\\Users\\daniel.sund\\.nuget\\packages\\yarp.reverseproxy\\1.0.0-preview.12.21328.2\\yarp.reverseproxy.1.0.0-preview.12.21328.2.nupkg.sha512"
+  ],
+  "logs": []
+}

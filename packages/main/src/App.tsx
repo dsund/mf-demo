@@ -1,15 +1,32 @@
-import React from 'react';
+import * as React from "react";
 import { ThemeProvider } from 'styled-components';
-import { Button } from '@mfdemo/components/components';
-import { lightTheme } from '@mfdemo/components/Themes';
+import { darkTheme, lightTheme } from '@mfdemo/shared/themes';
+import { UserContext, userState } from '@mfdemo/shared/src/authentication/UserContext';
+import { configure } from 'mobx';
+import { observer } from 'mobx-react-lite';
+import Button from 'components/Button';
+// import UserPage from 'userinfo/UserPage';
 
+function init(){
+  // Enable strict mode for MobX.
+  // This disallows state changes outside of an action.
+  configure({ enforceActions: 'observed' });
+}
 
-const App = () => {
+init();
+
+const UserPage = React.lazy(() => import("userinfo/UserPage"));
+
+export const App: React.FC = () => {
 	return (
 		<ThemeProvider theme={lightTheme}>
-			<Button onClick={() => console.log('clicketi klick!')}>Button 1</Button>
-		</ThemeProvider>
+			<UserContext.Provider value={userState}>
+				<h1>Main application</h1>
+				<Button onClick={userState.login}>Login</Button>
+				<React.Suspense fallback="loading">
+					<UserPage />
+				</React.Suspense>
+			</UserContext.Provider >
+		</ThemeProvider> 
 	);
-};
-
-export default App;
+}
