@@ -46,12 +46,12 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "components",
       filename: "remoteEntry.js",
-			remotes: {
+      remotes: {
+        "libraries": "libraries@http://localhost:3000/remoteEntry.js",
       },
       exposes: {
         "./Button": "./src/Button/Button",
-				"./Themes": "./themes"
-      },
+	    },
       shared: {
 				"react": {
           singleton: true, eager: true,
@@ -61,10 +61,11 @@ module.exports = {
           singleton: true, eager: true,
           requiredVersion: deps["react-dom"],
         },
-				"styled-components": {
-          singleton: true, eager: true,
-          requiredVersion: deps["styled-components"],
-        },
+				'styled-components': {
+					singleton: true,
+					eager: true,
+					requiredVersion: deps['styled-components'],
+				}
        },
     }),
 	],

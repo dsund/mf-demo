@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { IButtonTheme, Theme } from '../themes/theme';
+import { defaultTheme, IButtonTheme, lightTheme, Theme } from '@mfdemo/shared/themes';
 import { Button as AntButton } from 'antd';
 import 'antd/dist/antd.css';
 
@@ -13,13 +13,13 @@ export interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({ ...props }) => {
 	const theme: Theme = useContext(ThemeContext);
-	let buttonTheme: IButtonTheme = theme.button.default;
+	let buttonTheme: IButtonTheme = theme?.button?.default ?? defaultTheme.button.default;
 	if (props.type?.toString() == 'primary') {
-		buttonTheme = theme.button.primary;
+		buttonTheme = theme.button.primary ?? defaultTheme.button.primary;
 	} else {
-		buttonTheme = theme.button.default;
+		buttonTheme = theme?.button?.default ?? defaultTheme.button.default;
 	}
-	
+
 	return (
 		<StyledButton theme={buttonTheme} {...props}>
 			{props.children}

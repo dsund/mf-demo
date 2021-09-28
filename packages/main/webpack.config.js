@@ -1,8 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ModuleFederationPlugin =
-	require('webpack').container.ModuleFederationPlugin;
+const ModuleFederationPlugin = require('webpack').container.ModuleFederationPlugin;
 const path = require('path');
-const deps = require("./package.json").dependencies;
+const deps = require('./package.json').dependencies;
 
 module.exports = {
 	entry: './src/index',
@@ -45,26 +44,30 @@ module.exports = {
 			template: './public/index.html',
 		}),
 		new ModuleFederationPlugin({
-			name: 'shell',
+			name: 'main',
 			remotes: {
-        "component-app": "components@http://localhost:3001/remoteEntry.js",
-      },
-			exposes: {
-      },
-      shared: {
-        "react": {
-          singleton: true, eager: true,
-          requiredVersion: deps["react"],
-        },
-        "react-dom": {
-          singleton: true, eager: true,
-          requiredVersion: deps["react-dom"],
-        },
-        "styled-components": {
-          singleton: true, eager: true,
-          requiredVersion: deps["styled-components"],
-        },
-       },
+				components: 'components@http://localhost:3001/remoteEntry.js',
+				//userinfo: 'userinfo@http://localhost:3011/remoteEntry.js',
+			},
+			exposes: {},
+			shared: {
+				react: {
+					singleton: true,
+					eager: true,
+					requiredVersion: deps['react'],
+				},
+				'react-dom': {
+					singleton: true,
+					eager: true,
+					requiredVersion: deps['react-dom'],
+				},
+				'styled-components': {
+					singleton: true,
+					eager: true,
+					requiredVersion: deps['styled-components'],
+				},
+				
+			},
 		}),
 	],
 };

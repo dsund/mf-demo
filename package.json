@@ -1,8 +1,12 @@
 {
-	"name": "mf-demo",
+	"name": "@mfdemo/workspace",
 	"version": "1.0.0",
 	"description": "Typescript monorepo for micro frontend demo",
 	"private": true,
+	"license": "MIT",
+	"workspaces": [
+		"packages/**"
+	],
 	"scripts": {
 		"bootstrap": "lerna bootstrap --ignore-scripts",
 		"build": "lerna run --parallel build",
@@ -14,9 +18,6 @@
 		"build-storybook": "build-storybook",
 		"lint": "lerna exec -- eslint . --ext .js,.jsx,.ts,.tsx --fix"
 	},
-	"workspaces": [
-		"packages/**"
-	],
 	"devDependencies": {
 		"@react-theming/storybook-addon": "^1.1.1",
 		"@storybook/addon-actions": "^6.2.9",
