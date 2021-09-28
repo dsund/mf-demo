@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ThemeProvider } from 'styled-components';
-import { lightTheme } from '@mfdemo/shared/themes';
+import { darkTheme, lightTheme } from '@mfdemo/shared/themes';
 import { UserPage } from './pages/UserPage';
 import { UserContext, userState } from '@mfdemo/shared/src/authentication/UserContext';
 import { configure } from 'mobx';
@@ -19,7 +19,7 @@ init();
 
 export const App: React.FC = observer(() => {
 	return (
-		<div>
+		<div style={{"background": "#abc"}}>
 			<ThemeProvider theme={lightTheme}>
 			<UserContext.Provider value={userState}>
 				<Button onClick={userState.login}>Login</Button>

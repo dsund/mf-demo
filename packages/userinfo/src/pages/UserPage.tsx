@@ -6,7 +6,7 @@ import Button from 'components/Button';
 export const UserPage: React.FC =  observer(() => {
   const userStore = React.useContext(UserContext);
   return (
-    <div>
+    <div style={{"border":"solid", "background": "#aa1"}}>
       <h2>UserClaims</h2>
       <Button onClick={userStore.getUser}>Get User</Button>
       <ul>

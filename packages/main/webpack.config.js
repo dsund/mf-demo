@@ -47,7 +47,7 @@ module.exports = {
 			name: 'main',
 			remotes: {
 				components: 'components@http://localhost:3001/remoteEntry.js',
-				userinfo: 'userinfo@http://localhost:3011/remoteEntry.js',
+				//userinfo: 'userinfo@http://localhost:3011/remoteEntry.js',
 			},
 			exposes: {},
 			shared: {
